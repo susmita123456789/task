@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import  { useEffect } from 'react'
 
 import { Link, matchPath } from 'react-router-dom'
 import {NavbarLinks} from "../../data/navbar-links"
@@ -8,7 +8,7 @@ import { useSelector } from 'react-redux'
 import ProfileDropDown from '../core/Auth/ProfileDropDown'
 import { apiConnector } from '../../services/apiconnector'
 import { categories } from '../../services/apis'
-import { useState } from 'react'
+// import { useState } from 'react'
 import {IoIosArrowDropdownCircle} from "react-icons/io"
 
 // const subLinks = [
@@ -47,7 +47,7 @@ const Navbar = () => {
     useEffect( () => {
         console.log("PRINTING TOKEN", token);
         fetchSublinks();
-    },[] )
+    },[token] )
 
 
 
