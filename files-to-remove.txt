@@ -1,0 +1,4 @@
+src/assets/Images/boxoffice.png
+src/assets/Images/Plan_your_lessons.png
+src/assets/Images/Compare_with_others.png
+src/assets/Images/bghome.svg

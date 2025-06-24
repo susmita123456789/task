@@ -6,9 +6,9 @@ html, body {
     overflow-x: hidden;
 }
 
-.homepage_bg {
+/* .homepage_bg {
     background: url("../src/assets/Images/bghome.svg");
-}
+} */
 
 /* https://10015.io/tools/css-loader-generator */
 .spinner {
