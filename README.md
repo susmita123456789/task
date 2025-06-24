@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # React & Tailwind CSS Starter Pack
 
 This is a starter pack for creating React projects with Tailwind CSS configured. It uses React version **18.2** and Tailwind CSS version **3.2**.
@@ -33,3 +34,6 @@ Contributions are welcome! If you have any suggestions or find any issues, pleas
 =======
 # taskManager
 >>>>>>> ba878cd8b204eb02efa984a7dd8b6645724cdfdf
+=======
+# task
+>>>>>>> 12cf472433957f911815d5e85febd81f39c25512
