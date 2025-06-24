@@ -250,6 +250,7 @@ dotenv.config();
 const PORT = process.env.PORT || 5000;
 
 // Middleware setup
+app.use(cors());
 app.use(express.json());
 app.use(cookieParser());
 app.use(
