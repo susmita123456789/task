@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react'
-import logo from "../../assets/Logo/Logo-Full-Light.png"
+
 import { Link, matchPath } from 'react-router-dom'
 import {NavbarLinks} from "../../data/navbar-links"
 import { useLocation } from 'react-router-dom'
 import { useSelector } from 'react-redux'
-import {AiOutlineShoppingCart} from "react-icons/ai"
+
 import ProfileDropDown from '../core/Auth/ProfileDropDown'
 import { apiConnector } from '../../services/apiconnector'
 import { categories } from '../../services/apis'
@@ -26,17 +26,17 @@ import {IoIosArrowDropdownCircle} from "react-icons/io"
 const Navbar = () => {
     console.log("Printing base url: ",process.env.REACT_APP_BASE_URL||"http://localhost:4000/api/v1");
     const {token} = useSelector( (state) => state.auth );
-    const {user} = useSelector( (state) => state.profile );
+    // const {user} = useSelector( (state) => state.profile );
     // const {totalItems} = useSelector( (state) => state.cart )
     const location = useLocation();
 
-    const [ssubLinks, setSsubLinks]  = useState([]);
+    // const [ssubLinks, setSsubLinks]  = useState([]);
 
     const fetchSublinks = async() => {
         try{
             const result = await apiConnector("GET", categories.CATEGORIES_API);
             console.log("Printing Sublinks result:" , result);
-            setSsubLinks(result.data.data);
+            // setSsubLinks(result.data.data);
         }
         catch(error) {
             console.log("Could not fetch the category list");
@@ -62,11 +62,11 @@ const Navbar = () => {
       <Link to="/">
         {/* <img src={https://images-platform.99static.com/j64NlcXHohX_Sml6UjcAFer6gj8=/500x500/smart/99designs-contests-files/contests/17/1772/177240/brief/ebcb42a240c075301c2f7a56b2bd73e5} width={160} height={42} loading='lazy'/> */}
        <img 
-  src="https://images-platform.99static.com/j64NlcXHohX_Sml6UjcAFer6gj8=/500x500/smart/99designs-contests-files/contests/17/1772/177240/brief/ebcb42a240c075301c2f7a56b2bd73e5" 
+  src="https://images-platform.99static.com/j64NlcXHohX_Sml6UjcAFer6gj8=/500x500/smart/99designs-contests-files/contests/17/1772/177240/brief/ebcb42a240c075301c2f7a56b2bd73e5 " alt="Task Manager logo"
   width={40} 
   height={30} 
   loading="lazy" 
-  alt="Description of image"
+  
 />
 
         <h4 width={10} height={42} loading='lazy'> TaskManager</h4>

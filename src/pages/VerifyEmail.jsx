@@ -24,7 +24,7 @@ function VerifyEmail() {
   const handleVerifyAndSignup = (e) => {
     e.preventDefault();
     const {
-      accountType,
+     
       firstName,
       lastName,
       email,
