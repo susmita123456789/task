@@ -1,39 +1,112 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-# React & Tailwind CSS Starter Pack
+✅ Task Manager Web Application
+A full-stack Task Manager Web App built using React.js, Node.js, Express.js, and MySQL/PostgreSQL (SQL Edition), with JWT Authentication, Email OTP verification, and responsive UI using Tailwind CSS. Deployed on Vercel (Frontend) and Railway (Backend) and Redux for state Management.
 
-This is a starter pack for creating React projects with Tailwind CSS configured. It uses React version **18.2** and Tailwind CSS version **3.2**.
 
-## Usage
+🚀 Features
+✉️ OTP Verification via Email
 
-This starter pack includes a basic setup for using **Tailwind CSS with React**. To start building your own components and styles, follow these steps:
+🧪 Tested API endpoints using Postman
 
-1. Clone the repository to your local machine.
-    ```sh
-    git clone https://github.com/thepranaygupta/react-tailwind-css-starter-pack.git
-    ```
+🔐 JWT Token Authentication
 
-1. Install the required packages.
-    ```sh
-    cd react-tailwind-css-starter-pack
-    npm install
-    ```
+👤 User Authentication (Login, Signup)
 
-1. Start the development server.
-    ```sh
-    npm start
-    ```
-1. Open the project in your browser at [`http://localhost:3000`](http://localhost:3000) to view your project.
-1. Create your React components and add your styles using Tailwind classes. You can also create new CSS files and import them into your components.
+📋 CRUD for Tasks (Create, Read, Update)
 
-The project is set up to use `postcss-cli` to process your CSS files. You can add your own `tailwind.config.js` file to customize your Tailwind setup.
+🌐 Fully responsive UI with Tailwind CSS
 
-## Contributing
+☁️ Deployment: Vercel (frontend) & Railway (backend)
 
-Contributions are welcome! If you have any suggestions or find any issues, please feel free to open an issue or a pull request.
-=======
-# taskManager
->>>>>>> ba878cd8b204eb02efa984a7dd8b6645724cdfdf
-=======
-# task
->>>>>>> 12cf472433957f911815d5e85febd81f39c25512
+
+task-manager/
+│
+├── backend/
+│   ├── controllers/
+│   ├── models/
+│   ├── routes/
+│   ├── middleware/
+│   └── config/
+│
+├── frontend/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── redux/
+│   │   └── utils/
+
+
+🧠 Tech Stack
+Frontend
+
+React.js
+
+Redux Toolkit
+
+Tailwind CSS
+
+Axios
+
+Hot Toast
+
+
+
+Backend
+Node.js
+
+Express.js
+
+Sequelize/Knex.js (with MySQL or PostgreSQL)
+
+Nodemailer (for OTP)
+
+JWT
+
+⚙️ Environment Variables
+Backend .env
+ini
+Copy
+Edit
+PORT=4000
+DB_HOST=...
+DB_USER=...
+DB_PASSWORD=...
+DB_NAME=...
+JWT_SECRET=...
+EMAIL_USER=...
+EMAIL_PASS=...
+
+Frontend .env
+
+VITE_BACKEND_URL=https://your-backend-url.com/api/v1
+
+
+📬 API Endpoints
+Endpoint	Method	Description
+/auth/sendotp	POST	Send OTP to Email
+/auth/signup	POST	User Registration
+/auth/login	POST	User Login
+/tasks/	GET	Get All Tasks
+/tasks/:id	PUT	Update Task
+
+🧪 Tested with Postman
+Send OTP to email ✅
+
+Verify email OTP ✅
+
+Create User ✅
+
+Login User ✅
+
+CRUD Tasks ✅
+
+
+🌍 Deployment
+Frontend (React.js) – https://task-five-eta.vercel.app/
+
+Backend (Express.js) – https://task-production-b011.up.railway.app/
+
+
+
+
+
+
