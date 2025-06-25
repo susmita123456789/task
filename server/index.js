@@ -625,6 +625,12 @@ app.use(cookieParser());
 app.use("/api/v1/auth", userRoutes);
 app.use("/api/v1/tasks", taskRoutes);
 
+
+
+app.get("/", (req, res) => {
+  res.json({ success: true, message: "Server is running" });
+});
+
 /* --------------------- DB CONNECTION & SERVER --------------------- */
 const startServer = async () => {
   try {
